@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-<html lang="en-US">
   <head>
     <meta charset="utf-8">
-	<html lang="en-US">
+    <html lang="en-US">
     <title>Sample Video and Audio</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -16,28 +15,30 @@
   
     <header>
     <h1>This is a Sample of How to Use Video and Audio in HTML</h1>
-	</header>
+    </header>
     
-	<main>
-	<article>
-	<video controls loop muted
-       poster="Justin-the-dog.jpg">
+    <main>
+    <article>
+    <h2>A Rabbit Video</h2>
+    <video controls
+      poster="Justin-the-dog.jpg">
       <source src="rabbit320.mp4" type="video/mp4">
       <source src="rabbit320.webm" type="video/webm">
-	  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
-        </video>
-	</article>
+      <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+      <track kind=subtitles src=subtitles.vtt srclang=en label="English" default>
+    </video>
+    </article>
     
-    <article>	
-    <audio controls autoplay>
-    <source src="RickNelson-YourKindOfLovin.mp3" type="audio/mp3">
-	<source src="RickNelson-YourKindOfLovin.ogg" type="audio/ogg">
- 	<kind=subtitles src=subtitles.vtt srclang=en track label="English" default>
-	<p>Your browser doesn't support HTML5 audio. Here is a <a href="RickNelson-YourKindOfLovin.mp3">link to the audio</a> instead.</p>
-	</audio>
     <article>
+    <h2>Rick Nelson&apos;s &quot;Your Kind of Lovin&apos;&quot;</h2>	
+      <audio controls>
+      <source src="RickNelson-YourKindOfLovin.mp3" type="audio/mp3">
+      <source src="RickNelson-YourKindOfLovin.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio. Here is a <a href="RickNelson-YourKindOfLovin.mp3">link to the audio</a> instead.</p>
+    </audio>
+    </article>
 	
-	</main>
+   </main>
 	  
   </body>  
 </html> 
